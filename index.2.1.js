@@ -18,9 +18,13 @@ function multiCombination(n, r) {
   return combination(n + r - 1, r);
 }
 
-module.exports = {
-  permutation,
-  combination,
-  multiPermutation,
-  multiCombination
-};
+
+const n = 8;
+const r = 3;
+
+console.log(`n = ${n}, r = ${r}`)
+console.log(`Permutation: ${permutation(n, r)}`);
+console.log(`Combination: ${combination(n, r)}`);
+console.log(`Multi Permutation: ${multiPermutation(n, r)}`);
+console.log(`Multi Combination: ${multiCombination(n, r)}`);
+
